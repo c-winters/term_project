@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $.getJSON("products.json", function(data){
         $.each(data, function() {
-            var productsArray = data.Products;
-            console.log(productsArray);
+            var products = data.Products;
+            console.log(products);
         });
     });
 });
