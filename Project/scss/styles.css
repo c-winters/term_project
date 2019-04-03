@@ -231,4 +231,9 @@ main div#contact-form #submit, main div#contact-form #reset {
   background-color: rgba(63, 66, 68, 0.466);
   border: none;
 }
+
+main #product-card {
+  background-color: rgba(183, 198, 209, 0.705);
+  margin-bottom: 0.5em;
+}
 /*# sourceMappingURL=styles.css.map */
