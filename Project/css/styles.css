@@ -1,0 +1,19 @@
+body {
+  font-family: helvetica;
+  margin: 0; }
+
+body #bg {
+  -webkit-clip-path: polygon(100% 0, 100% 81%, 31% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 81%, 31% 100%, 0 100%, 0 0);
+  background-color: color(primary);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1; }
+
+@media (min-width: 840px) {
+  body #bg {
+    -webkit-clip-path: polygon(0 0, 80% 0%, 49% 100%, 0% 100%);
+    clip-path: polygon(0 0, 80% 0%, 49% 100%, 0% 100%); } }
+
+/*# sourceMappingURL=styles.css.map */

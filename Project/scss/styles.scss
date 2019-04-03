@@ -1,0 +1,260 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+$bg-dark: #4d4f5e9f;
+
+$colors: (
+   header: rgb(235, 249, 255),
+   text: rgb(54, 54, 54),
+   barely-transparent: #c5d5e0ed,
+   transparent-gray: rgba(63, 66, 68, 0.466),
+   transparent-white: rgba(183, 198, 209, 0.705),
+   transparent: #fdfdfd00,
+   accent: #FFF6BB
+);
+
+$padding: 15px;
+$borders: 15px;
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+$desktop: 1025px;
+$tablet: 700px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}){
+        @content;
+    }
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+
+    #bg {
+        background-image: url(../../Project/pictures/mountains_small.png);
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+
+        @include desktop {
+            background-image: url(../../Project/pictures/mountains_large.jpg);
+        }
+    }
+
+    #bg.main-bg {
+        position: fixed;
+        top: 0;
+    }
+}
+
+nav {
+    
+    div .dropdown-menu  {
+        background: #fff9f9c9;
+    }
+}
+
+main {
+
+    margin: 0 2em;
+
+    @include desktop {
+        margin: 2em 6em;
+    }
+
+    .jumbotron {
+        margin: 0 auto 1em auto;
+        padding: 1.5em;
+        background-color: color(transparent); 
+
+        h1 {
+            color: color(header);
+            line-height: 1.1em;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgb(3, 3, 3);
+        }
+        p {
+            padding-top: 0.5em;
+            color: color(text);
+            font-size: 1.3em;
+            line-height: 1em;
+            font-weight: bold;
+            text-shadow: 0px 0px 25px rgba(252, 252, 252, 0.534);
+        }
+
+        @include desktop {
+            margin: auto;
+            padding: 2em 4 1.5em 4em;
+
+            h1 {
+                font-size: 2.8em;
+            }
+            p {
+                padding-top: 0.5em;
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    a.card,
+    a.card:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a.card:hover #bg{
+        opacity: 0.7;
+    }
+
+    div .card {
+        background: color(transparent);
+
+        #bg{
+            opacity: 1;
+        }
+
+        #bg.story_card {
+            background-image: url(../../Project/pictures/story_card.jpg);
+        }
+        #bg.products_card {
+            background-image: url(../../Project/pictures/products_card.jpg);
+        }
+        #bg.contact_card {
+            background-image: url(../../Project/pictures/contact_card.jpg);
+        }
+
+        button {
+            color: color(header);
+            line-height: 1.1em;
+            font-size: 1em;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgb(3, 3, 3);
+        }
+
+        button:hover, button:visited {
+            text-decoration: none;
+            color: color(header);
+        }
+
+        .card-header#headingOne {
+            background-image: url(../../Project/pictures/accordion_city.jpg);
+        }
+        .card-header#headingTwo {
+            background-image: url(../../Project/pictures/accordion_jungle.jpg);
+        }
+        .card-header#headingThree {
+            background-image: url(../../Project/pictures/accordion_ship.jpg);
+        }
+
+        .card-header {
+            background-position: center;
+            background-size: cover;
+            opacity: 0.75;
+        }
+
+        .card-title {
+            color: color(header);
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 1px 1px 18px rgb(3, 3, 3);
+        }
+
+        @include desktop {
+            #bg {
+                opacity: 0.15;
+            }
+        }
+    }
+    
+    div.accordion .card-body {
+        background: color(transparent-white);
+        text-shadow: 0px 0px 4px white;
+        font-weight: bold;
+    }
+
+    div.carousel {
+
+
+        div.carousel-image {
+            margin: auto;
+            width: max;
+            height: 20em;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+
+        div#carousel-image0 {
+            background-image: url(../../Project/pictures/spices.jpg);
+        }
+        div#carousel-image1 {
+            background-image: url(../../Project/pictures/tea_leaves.jpg);
+        }
+        div#carousel-image2 {
+            background-image: url(../../Project/pictures/olive_oil_fixed.jpg);
+        }
+        div#carousel-image3 {
+            background-image: url(../../Project/pictures/kitchenware.jpg);
+        }
+        div#carousel-image4 {
+            background-image: url(../../Project/pictures/coffee2.jpg);
+        }
+        div#carousel-image5 {
+            background-image: url(../../Project/pictures/appliances.jpg);
+        }
+
+        h1 {
+            color: color(header);
+            line-height: 1.1em;
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgb(3, 3, 3);
+            margin-bottom: 2em;
+        }
+
+    }
+
+    div#contact-form {
+        
+        font-weight: bold;
+        margin: 0;
+        padding: 1em;
+        border-radius: 0.5em;
+        background-color: color(barely-transparent);
+
+        label.contact-radio {
+            font-weight: normal;
+            text-shadow: 0 0 10px white;
+        }
+
+        @include desktop {
+            margin: 0 5em 1em 5em;
+            padding: 2em;
+        }
+
+        #submit, #reset {
+            width: 8em;
+            background-color: color(transparent-gray);
+            border: none;
+        }
+        
+    }
+}
