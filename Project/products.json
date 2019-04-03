@@ -1,0 +1,235 @@
+{ 
+    "Products" : [
+        { 
+            "name" : "Cinnamon",
+            "stockNumber" : 3431,
+            "price" : 1.25,
+            "quantityOnHand" : 60,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Nutmeg",
+            "stockNumber" : 9422,
+            "price" : 1.01,
+            "quantityOnHand" : 30,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Italian Olive Oil",
+            "stockNumber" : 2457,
+            "price" : 3.12,
+            "quantityOnHand" : 100,
+            "category": "Oil"
+        },
+        { 
+            "name" : "Greek Olive Oil",
+            "stockNumber" : 8743,
+            "price" : 3.52,
+            "quantityOnHand" : 80,
+            "category": "Oil"
+        },
+        { 
+            "name" : "Cloves",
+            "stockNumber" : 3525,
+            "price" : 1.04,
+            "quantityOnHand" : 36,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Jasmin Tea",
+            "stockNumber" : 4367,
+            "price" : 2.15,
+            "quantityOnHand" : 51,
+            "category": "Tea"
+        },
+        { 
+            "name" : "Earl Grey Tea",
+            "stockNumber" : 9824,
+            "price" : 2.09,
+            "quantityOnHand" : 43,
+            "category": "Tea"
+        },
+        { 
+            "name" : "Cocoa",
+            "stockNumber" : 7437,
+            "price" : 2.42,
+            "quantityOnHand" : 67,
+            "category": "Spice"
+        },
+        { 
+            "name" : "South American Coffee",
+            "stockNumber" : 4376,
+            "price" : 3.23,
+            "quantityOnHand" : 46,
+            "category": "Coffee"
+        },
+        { 
+            "name" : "Tumeric",
+            "stockNumber" : 8735,
+            "price" : 0.92,
+            "quantityOnHand" : 32,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Sumac",
+            "stockNumber" : 7547,
+            "price" : 1.23,
+            "quantityOnHand" : 24,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Anise",
+            "stockNumber" : 6457,
+            "price" : 1.04,
+            "quantityOnHand" : 47,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Oolong Tea",
+            "stockNumber" : 3533,
+            "price" : 3.12,
+            "quantityOnHand" : 45,
+            "category": "Tea"
+        },
+        { 
+            "name" : "North African Coffee",
+            "stockNumber" : 2462,
+            "price" : 3.24,
+            "quantityOnHand" : 123,
+            "category": "Coffee"
+        },
+        { 
+            "name" : "South African Coffee",
+            "stockNumber" : 5635,
+            "price" : 3.21,
+            "quantityOnHand" : 106,
+            "category": "Coffee"
+        },
+        { 
+            "name" : "Avacado Oil",
+            "stockNumber" : 5372,
+            "price" : 3.45,
+            "quantityOnHand" : 59,
+            "category": "Oil"
+        },
+        { 
+            "name" : "Hazelnut Oil",
+            "stockNumber" : 9242,
+            "price" : 4.76,
+            "quantityOnHand" : 25,
+            "category": "Oil"
+        },
+        { 
+            "name" : "Cardamom",
+            "stockNumber" : 7373,
+            "price" : 1.12,
+            "quantityOnHand" : 36,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Paprika",
+            "stockNumber" : 8366,
+            "price" : 1.34,
+            "quantityOnHand" : 51,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Allspice",
+            "stockNumber" : 3648,
+            "price" : 1.04,
+            "quantityOnHand" : 57,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Sesame Oil",
+            "stockNumber" : 8244,
+            "price" : 4.46,
+            "quantityOnHand" : 34,
+            "category": "Oil"
+        },
+        { 
+            "name" : "Peanut Oil",
+            "stockNumber" : 9722,
+            "price" : 3.28,
+            "quantityOnHand" : 49,
+            "category": "Oil"
+        },
+        { 
+            "name" : "Japanese Green Tea",
+            "stockNumber" : 2864,
+            "price" : 4.13,
+            "quantityOnHand" : 62,
+            "category": "Tea"
+        },
+        { 
+            "name" : "Green Tea",
+            "stockNumber" : 5317,
+            "price" : 2.91,
+            "quantityOnHand" : 84,
+            "category": "Tea"
+        },
+        { 
+            "name" : "Coriander",
+            "stockNumber" : 3865,
+            "price" : 0.56,
+            "quantityOnHand" : 48,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Cumin",
+            "stockNumber" : 5369,
+            "price" : 0.87,
+            "quantityOnHand" : 74,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Black Peppercorns",
+            "stockNumber" : 8273,
+            "price" : 0.72,
+            "quantityOnHand" : 108,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Cayenne Powder",
+            "stockNumber" : 3491,
+            "price" : 0.97,
+            "quantityOnHand" : 52,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Black Tea",
+            "stockNumber" : 8482,
+            "price" : 2.69,
+            "quantityOnHand" : 74,
+            "category": "Tea"
+        },
+        { 
+            "name" : "Herbal Tea",
+            "stockNumber" : 2467,
+            "price" : 2.73,
+            "quantityOnHand" : 39,
+            "category": "Tea"
+        },
+        { 
+            "name" : "Ginger Powder",
+            "stockNumber" : 7334,
+            "price" : 2.15,
+            "quantityOnHand" : 26,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Ancho Powder",
+            "stockNumber" : 8636,
+            "price" : 3.53,
+            "quantityOnHand" : 23,
+            "category": "Spice"
+        },
+        { 
+            "name" : "Spice Melange",
+            "stockNumber" : 1965,
+            "price" : 129.31,
+            "quantityOnHand" : 2287,
+            "category": "Spice"
+        }
+    ]
+}
