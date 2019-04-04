@@ -230,6 +230,20 @@
             "price" : 129.31,
             "quantityOnHand" : 2287,
             "category": "Spice"
+        },
+        {
+            "name" : "Fenugreek",
+            "stockNumber" : 3519,
+            "price" : 1.48,
+            "quantityOnHand" : 12,
+            "category" : "Spice"
+        },
+        {
+            "name" : "Five Spice",
+            "stockNumber" : 7532,
+            "price" : 2.54,
+            "quantityOnHand" : 36,
+            "category" : "Spice"
         }
     ]
 }
