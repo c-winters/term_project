@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
     var flickrApiUrl = "https://api.flickr.com/services/feeds/photos_public.gne";
 
     $.getJSON(flickrApiUrl, {
