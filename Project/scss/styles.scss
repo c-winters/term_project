@@ -259,7 +259,14 @@ main {
     }
 
     #product-card {
+        width: 90%;
+        height: auto;
         background-color: color(transparent-white);
         margin-bottom: 1em;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
     }
 }

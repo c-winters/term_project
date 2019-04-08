@@ -17,7 +17,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="scripts/flickr.js"></script>
+	<script src="scripts/lightbox.min.js"></script>
+	<script src="scripts/flickr.js"></script>
+	<script src="scripts/jquery.menuplugin.js"></script>
+	<script src="scripts/specials.js"></script>
 
 	<title>Excellent Products</title>
 </head>
@@ -28,7 +31,7 @@
 
 <div id="container">
 
-	<div id="bg"></div>
+	<div id="bg" class="main-bg"></div>
 	
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="index.html">Excellent Products</a>
@@ -62,11 +65,40 @@
     
     <main>
         <div class="jumbotron">
-            <h1>Peep these limited time offers</h1>
-            <p>Psych! They are just pictures from flickr!</p>
+            <h1>Peep it to these limited time offers</h1>
+            <p>
+				Psych! They are just pictures from flickr! Use the plugin menu below to search flickr
+				for the associated tags. 
+			</p>
+				When a button is clicked, the tags attribute is passed to a
+			    function that uses the flickr API to retrieve images from an account I made and displays
+			    them below.
+			<p>
+
+			</p>
         </div>
 
-        <div class="flickr-pics"></div>
+		<div class="mPlug">
+			<ul class="mPlug">
+				<li class="mPlug">
+					<button type="button" class="mPlug" name="all-button" tags="spice, tea, coffee, oil">All Products</a>
+				</li>
+				<li class="mPlug">
+					<button type="button" class="mPlug" name="spice-button" tags="spice">Spices</a>
+				</li>
+				<li class="mPlug">
+					<button type="button" class="mPlug" name="tea-button" tags="tea">Tea</a>
+				</li>
+				<li class="mPlug">
+					<button type="button" class="mPlug" name="coffee-button" tags="coffee">Coffee</a>
+				</li>
+				<li class="mPlug">
+					<button type="button" class="mPlug" name="oil-button" tags="oil">Oil</a>
+				</li>
+			</ul>
+		</div>
+
+        <div id="flickr-pics"></div>
     </main>
 </div>
 		

@@ -233,7 +233,16 @@ main div#contact-form #submit, main div#contact-form #reset {
 }
 
 main #product-card {
+  width: 90%;
+  height: auto;
   background-color: rgba(183, 198, 209, 0.705);
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #product-card img {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
